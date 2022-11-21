@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+.center{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 5px 3px;
+    padding:0 2%;
+    
+}
+
+header{
+    padding: 20px 0;
+}
+
+
+.logo{
+    width: 17%;
+}
+
+.menu{
+    
+    display: flex;
+    padding: 1%;
+    max-width: 1100px;
+    color: #004ea8; 
+
+    
+}
+.menu a{
+    color: #004ea8;
+    font-weight: bold;
+
+}
+.menu h2{
+    display: flex;
+    margin-left: 8px;
+   
+}
+ .barra{
+    background-color: #004ea8;;
+    text-align: center;
+    padding: 10px ;
+ }
+
+.barra a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: right;
+}
+.barra a:hover{
+    transition: 0.5s;
+    background-color:#3490dc;
+}
+
+main{
+    margin:25px auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  
+   
+    
+  
+}
+.servico{
+    color:#004ea8;
+   padding: 10px;
+   
+  
+}
+.servico h1{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 95px;
+  
+    
+}
+.atendimento{
+    padding: 0 30px;
+    margin-left: 150px;
+}
+.servico a{
+    text-decoration: none;
+    color:#004ea8;
+}
+.atendimento a{
+    text-decoration: none;
+    color:#004ea8;
+}
+.atendimento h2{
+    color:#004ea8;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: baseline;
+    flex-wrap:wrap;
+}
+
+
+.lista div{
+    padding: 7%;
+    
+    
+}
+.lista a{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista img{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-inline: 30%;
+    width: 35px;
+    height: 35px;
+}
+img .histoico{
+    display: flex;
+    margin-left: 10px;
+}
+
+.atendimento h3{
+    display: flex;
+    margin-left: 7px;
+}
+
+.atendimento a{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rodape{
+    background-color: #004ea8;
+    border-top: 0.4px solid #004ea8;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.rodape a{
+    color: white;
+}
+
+.atendimento{
+    background-color: #eee;
+    min-width: 60vh;
+    padding: 50px;
+}
+
+
+
+.quemsomos h1{
+    background-color: #004ea8;
+    max-width: 230px;
+    color: white;
+}
+
+.container{
+    background-color: #eee;
+    min-width: 60vh;
+    padding: 20px 30px;
+}
+
+.quemsomos img{
+    max-width: 70%;
+    height: auto;
+}

@@ -42,7 +42,7 @@ function Login() {
             const resposta = await api.post(`/auth/logar`, userLogin)
             setToken(resposta.data.token)
 
-            await login(`auth/logar`, userLogin, setToken )
+            await login(`/auth/logar`, userLogin, setToken )
 
             alert('Usuário logado com sucesso')
         } catch(error) {

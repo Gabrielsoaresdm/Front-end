@@ -7,37 +7,16 @@ import "./Sobre.css"
 function Sobre(){
     return(
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={12}>
-                    <div>
-                        <h1 className="text-aling-center">O que nos motiva?</h1>
-                    </div>                       
-                </Grid>
-                <Grid alignItems="center" item xs={12}>
-                    <div>
-                        <p className="text-aling-center">Lorem ipsum, dolor sit amet consectetur adipisicing 
-                        elit. Vero esse atque libero deleniti cumque nesciunt? Vero magnam, soluta autem velit 
-                        illo iusto sequi, ea in aliquid deserunt debitis repellat mollitia! Lorem ipsum dolor 
-                        sit amet consectetur adipisicing elit. Magni aperiam odit, ea nemo deserunt rem odio 
-                        ipsum ducimus at est voluptatem, voluptate eum adipisci cumque! Facilis culpa esse id earum?</p>
-
+             <Grid container direction="row" justifyContent="center" alignItems="center">
+                <Grid item xs={6}>
+                    <div className="h1">
+                    <h1>O ProBem</h1>
                     </div>
+                    <p className="p">Enxergando a dificuldade ao acesso à itens hospitalares duráveis, criamos o ProBem; uma plataforma capaz viabilizar democraticamente esses itens, através do que consideramos algo muito importante: o afeto de pessoas!</p>
                 </Grid>
-                <Grid item xs={6}>
-                    <img src="https://fasig.com.br/wp-content/uploads/2020/07/trabalho-voluntario-na-area-da-saude-por-que-nao.webp" alt="" width={550} />
+                <Grid item xs={6} >
+                    <img className="img1" src="https://s3-alpha-sig.figma.com/img/d4db/14e8/b7df6bde4bd1dda51d3efff430cf4f4f?Expires=1672012800&Signature=fp6ScgBoUwKr-7h8RRdOHeQIlqNlzrKVz8bZD22CEVMQGRJoS~JktnVl0l-CtiOLwajWLRIVP1vnIW4nXxfABagDfVqLIOaZC9Q-DnrOscVjc-0QyqaKVvW2mwslDAqbfeOY6STRufCPOiM0k1w8SE94iUOJe55CrJZY1RcsrRADbuDrPXbk38Nbd1Wd0cqcvRaA7HH7Cyxf~9GxWQ0mL5mCKOERHXglFA2902dprBiifwWYr9Q-I-~joR4ux-YrAmPCM32uUGAwUTxNnESrMrb9fgJG36XW~rzxXN2LnfoyPQ2vqPu0xR3JhmarAHpjU7bPV~PmbvoaCWBe1IyWSA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="" width="1000px" />
                 </Grid>
-                <Grid item xs={6}>
-                    <p className="text-aling-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione et accusamus qui soluta hic voluptates necessitatibus debitis totam assumenda, adipisci placeat est tempore nulla earum modi delectus in ipsam? Ex.</p>
-                </Grid>
-                <Grid item xs={1}></Grid>
-                <Grid item xs={4}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione et accusamus qui soluta hic voluptates necessitatibus debitis totam assumenda, adipisci placeat est tempore nulla earum modi delectus in ipsam? Ex.</p>
-                </Grid>
-                <Grid item xs={1}></Grid>
-                <Grid item xs={6}>
-                    <img src="https://www.napratica.org.br/wp-content/uploads/2016/01/trabalho-voluntario.jpg" alt="" width={550} />
-                </Grid>
-                
             </Grid>
         </>
     );

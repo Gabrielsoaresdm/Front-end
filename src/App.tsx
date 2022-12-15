@@ -9,8 +9,8 @@ import Contato from './paginas/contato/Contato';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/cadastroUsuario';
 import Doacoes from './paginas/doacoes/Doacoes';
-import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
-import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
+import CadastroPost from './components/postagens/cadastroPost/CadastroProduto';
+import ListaProduto from './components/postagens/listapostagem/ListaProduto';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path='/contato' element={<Contato />} />
           <Route path='/cadastrousuario' element={<CadastroUsuario />} />
           <Route path='/doacoes' element={<Doacoes />} />
-          <Route path="/postagem" element={<ListaPostagem />} />
+          <Route path='/produtos' element={<ListaProduto/>} />
           <Route path="/formularioPostagem" element={<CadastroPost />} />
           <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
         </Routes>

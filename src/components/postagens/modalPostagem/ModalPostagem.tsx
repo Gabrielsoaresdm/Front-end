@@ -63,7 +63,7 @@ function ModalProduto () {
       <Button
         variant="outlined"
         className="btnModal"
-        onClick={handleOpen}>Nova Postagem</Button>
+        onClick={handleOpen}>Nova doação</Button>
       <Modal
         open={open}
         onClose={handleClose}

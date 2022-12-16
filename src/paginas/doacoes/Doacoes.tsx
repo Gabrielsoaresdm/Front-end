@@ -9,7 +9,7 @@ function Doacoes() {
             <div>
                 <h1>Doações:</h1>
             </div>
-            <Link to="/formularioPostagem" className="text-decorator-none">
+            <Link to="/formularioProduto" className="text-decorator-none">
                 <Box mx={1} className='cursor'>
                     <Typography variant="h6" color="inherit">
                         <button>Cadastrar Produtos</button>

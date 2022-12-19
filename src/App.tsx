@@ -9,30 +9,62 @@ import Contato from './paginas/contato/Contato';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/cadastroUsuario';
 import Doacoes from './paginas/doacoes/Doacoes';
-import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
-import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
+import CadastroPost from './components/postagens/cadastroPost/CadastroProduto';
+import ListaProduto from './components/postagens/listapostagem/ListaProduto';
+import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
+import CadastroProduto from './components/postagens/cadastroPost/CadastroProduto';
+import CadastroCategoria from './components/categorias/cadastroCategoria/CadastroCategoria';
+import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import store from './store/store';
 
 
 function App() {
   return (
+
+    <Provider store={store}>
+    <ToastContainer />
     <Router>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes>
           <Route path='/' element={<Login />} />
+
           <Route path='/login' element={<Login />} />
+
           <Route path='/home' element={<Home />} />
+
           <Route path='/sobre' element={<Sobre />} />
+
           <Route path='/contato' element={<Contato />} />
+
           <Route path='/cadastrousuario' element={<CadastroUsuario />} />
           <Route path='/doacoes' element={<Doacoes />} />
-          <Route path="/postagem" element={<ListaPostagem />} />
-          <Route path="/formularioPostagem" element={<CadastroPost />} />
-          <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
+
+          <Route path="/formularioProduto" element={<CadastroProduto />} />
+
+          <Route path="/formularioProduto/:id" element={<CadastroProduto />} />
+
+          <Route path='/produtos' element={<ListaProduto />} />
+
+         
+
+         
+
+          <Route path='/categoria' element={<ListaCategoria />} />
+
+          <Route path="/formularioCategoria" element={<CadastroCategoria />} />
+
+          <Route path="/formularioCategoria/:id" element={<CadastroCategoria />} />
+
+          <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+
         </Routes>
       </div>
       <Footer />
     </Router>
+    </Provider>
   );
 }
 

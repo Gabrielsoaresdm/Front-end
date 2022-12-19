@@ -9,7 +9,6 @@ import { TokenState } from "../../store/tokens/tokensReducer";
 import './Doacoes.css'
 
 function Doacoes() {
-
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
       );

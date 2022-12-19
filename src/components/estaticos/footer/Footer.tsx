@@ -6,10 +6,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css'
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <>
-        <Grid container direction="row" justifyContent="center" alignItems="center">
+            <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
                         <Box className='siga' paddingTop={10} display="flex" alignItems="center" justifyContent="center">
@@ -27,7 +27,7 @@ function Footer(){
                             </a>
                         </Box>
                     </Box>
-                    <Box className='box2'>
+                    <Box className='box1'>
                         <Box>
                             <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2022 Copyright:</Typography>
                         </Box>

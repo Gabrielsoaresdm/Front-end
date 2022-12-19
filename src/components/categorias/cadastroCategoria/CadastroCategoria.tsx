@@ -35,7 +35,7 @@ function CadastroCategoria() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/categoria/${id}`, setCategorias, {
+        buscaId(`categoria/${id}`, setCategorias, {
             headers: {
               'Authorization': token
             }
@@ -57,14 +57,14 @@ function CadastroCategoria() {
     
             if (id !== undefined) {
                 console.log(categoria)
-                put(`/categoria`, categoria, setCategorias, {
+                put('/categoria', categoria, setCategorias, {
                     headers: {
                         'Authorization': token
                     }
                 })
                 alert('Categoria atualizada com sucesso');
             } else {
-                post(`/categoria`, categoria, setCategorias, {
+                post('/categoria', categoria, setCategorias, {
                     headers: {
                         'Authorization': token
                     }

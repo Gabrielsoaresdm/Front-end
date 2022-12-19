@@ -20,11 +20,14 @@ function Navbar(){
         <div className="btn center">
             <a href="/login"><button className="btn btn-design">Login</button></a>
         </div>
-        <div className="center">
+        <div className="btn center">
             <a href="/cadastrousuario"><button className="btn btn-design">Cadastro</button></a>
         </div>
         <div className="btn center">
             <a href="/contato"><button className=" btn btn-design">Contato</button></a>
+        </div>
+        <div className="btn center">
+            <a href="/"><button className=" btn btn-design">Logout</button></a>
         </div>
      </div>
     );
